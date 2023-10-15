@@ -8,4 +8,10 @@
     <string name="cliente">Cliente</string>
     <string name="tienda">Tienda</string>
     <string name="title_activity_crear_usuario">Crear_usuario</string>
+    <string name="nombre">Nombre del manga</string>
+    <string name="precio">Precio</string>
+    <string name="imagen">Imagen de referencia</string>
+    <string name="disponibilidad">Disponibilidad</string>
+    <string name="descripcion">Descripcion del manga</string>
+    <string name="editorial">Editorial</string>
 </resources>
