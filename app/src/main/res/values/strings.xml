@@ -23,8 +23,8 @@
     <string name="cerrarseccion">Cerrar seccion</string>
     <string name="cargamangas">CARGA DE MANGAS</string>
     <string name="historialventa">HISTORIAL DE VENTAS</string>
-    <string name="carga">Estoy en la carga de mangas</string>
-    <string name="historial">Estoy en el historial de ventas</string>
+    <string name="historial">Historial de venta</string>
+    <string name="encuentranos">Encuentra tu tienda</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         String contrasena = campo2.getText().toString();
 
         if (nombreusuario.equals("camilo") && contrasena.equals("123")) {
-            Intent i = new Intent(this, inicio_tienda.class);
+            Intent i = new Intent(this, inicio_cliente.class);
             startActivity(i);
         }else {
             Toast.makeText(this,"Error en las credenciales",Toast.LENGTH_SHORT).show();

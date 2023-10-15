@@ -9,31 +9,31 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/item1"
+            android:id="@+id/i1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/inicio" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab2"
+            android:id="@+id/i2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/buscar" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab3"
+            android:id="@+id/i3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/tienda" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab4"
+            android:id="@+id/i4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/comprar" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab5"
+            android:id="@+id/i5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/mapa" />

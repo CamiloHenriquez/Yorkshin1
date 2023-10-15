@@ -3,7 +3,6 @@ package com.example.libreriayorkshin;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,18 +12,18 @@ import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class inicio_tienda extends AppCompatActivity {
+public class inicio_cliente extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio_tienda);
+        setContentView(R.layout.activity_inicio_cliente);
 
         androidx.appcompat.widget.Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
 
 
-        TabLayout tl = (TabLayout) findViewById(R.id.tablayout2);
+        TabLayout tl = (TabLayout) findViewById(R.id.tablayout);
         tl.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -33,14 +32,13 @@ public class inicio_tienda extends AppCompatActivity {
 
                 switch (position) {
                     case 0:
-                        //llamar al fragmento carga
-                        Carga p = new Carga();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, p).commit();
+                        //llamar al fragmento inicio
+
                         break;
                     case 1:
-                        //llamar al fragmento historial
-                        historial h = new historial();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, h).commit();
+                        //llamar al fragmento busqueda
+                        busqueda b = new busqueda();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, b).commit();
                         break;
                 }
 
@@ -77,4 +75,5 @@ public class inicio_tienda extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
