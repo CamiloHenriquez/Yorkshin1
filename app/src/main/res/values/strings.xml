@@ -21,4 +21,10 @@
     <string name="repnuevacontra">Repita la nueva contraseña</string>
     <string name="cambiar">Cambiar</string>
     <string name="cerrarseccion">Cerrar seccion</string>
+    <string name="cargamangas">CARGA DE MANGAS</string>
+    <string name="historialventa">HISTORIAL DE VENTAS</string>
+    <string name="carga">Estoy en la carga de mangas</string>
+    <string name="historial">Estoy en el historial de ventas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
