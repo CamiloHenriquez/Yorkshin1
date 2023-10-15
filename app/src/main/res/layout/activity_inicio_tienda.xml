@@ -9,13 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="128dp"
-        android:layout_height="133dp"
+        android:layout_width="160dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="42dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextText9"
         app:layout_constraintEnd_toStartOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -39,12 +40,14 @@
         android:id="@+id/editTextText9"
         android:layout_width="200dp"
         android:layout_height="30dp"
+        android:layout_marginBottom="562dp"
         android:background="@color/icons"
         android:ems="10"
         android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="139dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView14"
@@ -72,19 +75,21 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/editTextText12"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText9"
-        tools:layout_editor_absoluteX="106dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
         android:layout_marginBottom="10dp"
         android:text="@string/imagen"
         android:textColor="@color/icons"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        tools:layout_editor_absoluteX="139dp" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText10"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -100,12 +105,13 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginBottom="40dp"
         android:text="@string/disponibilidad"
         android:textColor="@color/icons"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:layout_editor_absoluteX="161dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <EditText
         android:id="@+id/editTextText12"

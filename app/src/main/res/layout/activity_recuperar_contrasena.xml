@@ -5,46 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_dark"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Crear_usuario">
+    tools:context=".Recuperar_contrasena">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
         android:gravity="center"
-        android:text="@string/usuario"
+        android:text="@string/mensaje"
+        android:textColor="@color/icons" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/nuevacontra"
         android:textColor="@color/icons" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:background="@color/icons"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="text" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:gravity="center"
-        android:text="@string/contrasenia"
-        android:textColor="@color/icons" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -55,18 +38,16 @@
         android:inputType="textPassword" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/reingresocontrasena"
+        android:text="@string/repnuevacontra"
         android:textColor="@color/icons" />
 
     <EditText
-        android:id="@+id/editTextTextPassword4"
+        android:id="@+id/editTextTextPassword2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -77,13 +58,13 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
         android:backgroundTint="@color/accent"
-        android:gravity="center"
-        android:text="@string/title_activity_crear_usuario" />
+        android:text="@string/cambiar" />
+
 </LinearLayout>

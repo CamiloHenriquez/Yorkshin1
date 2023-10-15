@@ -4,14 +4,20 @@
     <string name="contrasenia">Contraseña</string>
     <string name="btnIngresar">Ingresar</string>
     <string name="Bienvenido">¡Bienvenido!</string>
-    <string name="Registrarse">No tienes un usuario, registrate aqui</string>
+    <string name="Registrarse">Crear cuenta</string>
     <string name="cliente">Cliente</string>
     <string name="tienda">Tienda</string>
-    <string name="title_activity_crear_usuario">Crear_usuario</string>
+    <string name="title_activity_crear_usuario">Crear usuario</string>
     <string name="nombre">Nombre del manga</string>
     <string name="precio">Precio</string>
     <string name="imagen">Imagen de referencia</string>
     <string name="disponibilidad">Disponibilidad</string>
     <string name="descripcion">Descripcion del manga</string>
     <string name="editorial">Editorial</string>
+    <string name="recuperarcontrasena">Cambiar contraseña</string>
+    <string name="reingresocontrasena">Reingrese la contraseña</string>
+    <string name="mensaje">Has olvidado tu contraseña, aqui podras cambiarla</string>
+    <string name="nuevacontra">Nueva contraseña</string>
+    <string name="repnuevacontra">Repita la nueva contraseña</string>
+    <string name="cambiar">Cambiar</string>
 </resources>
