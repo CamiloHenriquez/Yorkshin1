@@ -33,12 +33,28 @@ public class inicio_cliente extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         //llamar al fragmento inicio
-
+                        Inicio i = new Inicio();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, i).commit();
                         break;
                     case 1:
                         //llamar al fragmento busqueda
                         busqueda b = new busqueda();
                         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, b).commit();
+                        break;
+
+                    case 2:
+                        tienda t = new tienda();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, t).commit();
+                        break;
+
+                    case 3:
+                        comprar c = new comprar();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, c).commit();
+                        break;
+
+                    case 4:
+                        mapa m = new mapa();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, m).commit();
                         break;
                 }
 

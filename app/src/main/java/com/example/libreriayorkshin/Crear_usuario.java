@@ -38,9 +38,6 @@ public class Crear_usuario extends AppCompatActivity {
             Toast.makeText(this,"Seccion cerrada",Toast.LENGTH_SHORT).show();
         }
 
-
-
-
         return super.onOptionsItemSelected(item);
     }
 }
