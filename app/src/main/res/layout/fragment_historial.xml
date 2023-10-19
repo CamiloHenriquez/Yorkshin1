@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".historial">
+    tools:context=".ui.historial">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
 
         <FrameLayout
             android:layout_width="375dp"
-            android:layout_height="535dp"
+            android:layout_height="466dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@color/accent">

@@ -1,4 +1,4 @@
-package com.example.libreriayorkshin;
+package com.example.libreriayorkshin.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.example.libreriayorkshin.R;
 
 public class Crear_usuario extends AppCompatActivity {
 

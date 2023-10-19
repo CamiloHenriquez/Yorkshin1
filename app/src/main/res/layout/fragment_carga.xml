@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_dark"
-    tools:context=".Carga">
+    tools:context=".ui.Carga">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -24,7 +24,7 @@
             android:textColor="@color/icons" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/nombremanga1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -65,13 +65,18 @@
             android:text="@string/imagen"
             android:textColor="@color/icons" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
+        <Button
+            android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginRight="140dp"
-            android:src="@drawable/buscadorimagen" />
+            android:onClick="tomar_foto"
+            android:text="@string/sacar_foto" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Subir_foto" />
 
         <TextView
             android:id="@+id/textView21"

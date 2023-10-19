@@ -27,6 +27,8 @@
     <string name="encuentranos">Encuentra tu tienda</string>
     <string name="compra">¡COMPRA TU MANGA SELLECIONADO AQUI!</string>
     <string name="tiendasCerca">TIENDAS CERCA DE TI</string>
+    <string name="Subir_foto">Subir foto</string>
+    <string name="sacar_foto">Sacar foto</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.libreriayorkshin;
+package com.example.libreriayorkshin.ui;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.libreriayorkshin.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Carga#newInstance} factory method to
+ * Use the {@link mapa#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Carga extends Fragment {
+public class mapa extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Carga extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Carga() {
+    public mapa() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class Carga extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Inicio.
+     * @return A new instance of fragment mapa.
      */
     // TODO: Rename and change types and number of parameters
-    public static Carga newInstance(String param1, String param2) {
-        Carga fragment = new Carga();
+    public static mapa newInstance(String param1, String param2) {
+        mapa fragment = new mapa();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class Carga extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_carga, container, false);
+        return inflater.inflate(R.layout.fragment_mapa, container, false);
     }
 }

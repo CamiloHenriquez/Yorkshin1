@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_dark"
-    tools:context=".Inicio" >
+    tools:context=".ui.Inicio" >
 
     <FrameLayout
         android:id="@+id/contenedortiendas"
@@ -13,5 +13,9 @@
         android:layout_gravity="center"
         android:background="@color/accent">
 
+        <ListView
+            android:id="@+id/lvTiendas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </FrameLayout>
 </FrameLayout>

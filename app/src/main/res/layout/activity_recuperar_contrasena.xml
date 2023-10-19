@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/primary_dark"
     android:orientation="vertical"
-    tools:context=".Recuperar_contrasena">
+    tools:context=".ui.Recuperar_contrasena">
 
     <include
         layout="@layout/toolbar"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_dark"
-    tools:context=".inicio_cliente">
+    tools:context=".ui.inicio_cliente">
 
     <include
         android:id="@+id/include3"
@@ -34,5 +34,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include3">
 
+        <FrameLayout
+            android:id="@+id/contenedortiendas"
+            android:layout_width="375dp"
+            android:layout_height="535dp"
+            android:layout_gravity="center"
+            android:background="@color/accent"/>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

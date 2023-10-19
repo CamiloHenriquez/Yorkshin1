@@ -1,9 +1,11 @@
-package com.example.libreriayorkshin;
+package com.example.libreriayorkshin.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Toolbar;
+
+import com.example.libreriayorkshin.R;
 
 public class Recuperar_contrasena extends AppCompatActivity {
 

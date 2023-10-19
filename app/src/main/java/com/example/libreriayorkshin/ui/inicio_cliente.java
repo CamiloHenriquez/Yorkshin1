@@ -1,4 +1,4 @@
-package com.example.libreriayorkshin;
+package com.example.libreriayorkshin.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.libreriayorkshin.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class inicio_cliente extends AppCompatActivity {

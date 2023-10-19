@@ -1,4 +1,4 @@
-package com.example.libreriayorkshin;
+package com.example.libreriayorkshin.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.example.libreriayorkshin.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,13 +25,6 @@ public class MainActivity extends AppCompatActivity {
         EditText campo2 = this.findViewById(R.id.etcontrasena);
         String contrasena = campo2.getText().toString();
 
-        if (nombreusuario.equals("camilo") && contrasena.equals("123")) {
-            Intent i = new Intent(this, inicio_cliente.class);
-            startActivity(i);
-        }else {
-            Toast.makeText(this,"Error en las credenciales",Toast.LENGTH_SHORT).show();
-        }
-
         //RadioGroup rgTipo = (RadioGroup) findViewById(R.id.rgtipo);
 
         //int id = rgTipo.getCheckedRadioButtonId();
@@ -45,7 +39,18 @@ public class MainActivity extends AppCompatActivity {
             //default:
                 //Toast.makeText(this,"Error en el tipo de usuario",Toast.LENGTH_SHORT).show();
 
-        //}
+
+
+        if (nombreusuario.equals("camilo") && contrasena.equals("123")){//&& tipo.equals("Cliente")) {
+            Intent i = new Intent(this, inicio_cliente.class);
+            startActivity(i);
+        }else if (nombreusuario.equals("jose") && contrasena.equals("456")){//&& tipo.equals("Tienda")) {
+            Intent i = new Intent(this, inicio_tienda.class);
+            startActivity(i);
+        }else{
+            Toast.makeText(this,"Error en las credenciales",Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public void crearCuenta(View v){
