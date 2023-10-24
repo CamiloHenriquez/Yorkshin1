@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.libreriayorkshin.R;
@@ -25,26 +26,23 @@ public class MainActivity extends AppCompatActivity {
         EditText campo2 = this.findViewById(R.id.etcontrasena);
         String contrasena = campo2.getText().toString();
 
-        //RadioGroup rgTipo = (RadioGroup) findViewById(R.id.rgtipo);
+        RadioGroup rgTipo = (RadioGroup) findViewById(R.id.rgTipo);
 
-        //int id = rgTipo.getCheckedRadioButtonId();
-        //String tipo = "";
-        //switch (id){
-            //case R.id.rbcliente:
-                //tipo = "Cliente";
-                //break;
-            //case R.id.rbtienda:
-                //tipo = "Tienda";
-                //break;
-            //default:
-                //Toast.makeText(this,"Error en el tipo de usuario",Toast.LENGTH_SHORT).show();
+        int id = rgTipo.getCheckedRadioButtonId();
+        String tipo ="";
+        if (id == R.id.rbCliente) {
+            tipo = "cliente";
+        } else if (id == R.id.rbTienda) {
+            tipo = "tienda";
+        } else {
+            Toast.makeText(this, "Error en el tipo de usuario", Toast.LENGTH_SHORT).show();
+        }
 
 
-
-        if (nombreusuario.equals("camilo") && contrasena.equals("123")){//&& tipo.equals("Cliente")) {
+        if (nombreusuario.equals("camilo") && contrasena.equals("123") && tipo.equals("cliente")) {
             Intent i = new Intent(this, inicio_cliente.class);
             startActivity(i);
-        }else if (nombreusuario.equals("jose") && contrasena.equals("456")){//&& tipo.equals("Tienda")) {
+        }else if (nombreusuario.equals("jose") && contrasena.equals("456") && tipo.equals("tienda")) {
             Intent i = new Intent(this, inicio_tienda.class);
             startActivity(i);
         }else{

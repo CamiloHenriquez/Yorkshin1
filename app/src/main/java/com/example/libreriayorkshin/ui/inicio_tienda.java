@@ -35,6 +35,9 @@ public class inicio_tienda extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_tienda);
 
+        Carga p = new Carga();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, p).commit();
+
         mStorage = FirebaseStorage.getInstance().getReference();
 
         androidx.appcompat.widget.Toolbar tb = (Toolbar) findViewById(R.id.toolbar);

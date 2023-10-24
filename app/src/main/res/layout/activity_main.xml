@@ -67,22 +67,23 @@
         android:textColor="@color/icons" />
 
     <RadioGroup
-        android:id="@+id/rgtipo"
+        android:id="@+id/rgTipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/rbcliente"
+            android:id="@+id/rbCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cliente"
             android:textColor="@color/icons"
             android:textColorHighlight="@color/accent"
-            android:textColorLink="@color/accent" />
+            android:textColorLink="@color/accent"
+            tools:text="@string/cliente" />
 
         <RadioButton
-            android:id="@+id/rbtienda"
+            android:id="@+id/rbTienda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tienda"

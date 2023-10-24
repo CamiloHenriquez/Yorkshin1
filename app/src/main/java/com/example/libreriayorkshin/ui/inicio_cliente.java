@@ -20,6 +20,9 @@ public class inicio_cliente extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_cliente);
 
+        Inicio i = new Inicio();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor2, i).commit();
+
         androidx.appcompat.widget.Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
 
