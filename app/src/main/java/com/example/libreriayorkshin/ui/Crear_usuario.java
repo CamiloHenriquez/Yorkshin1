@@ -1,16 +1,28 @@
 package com.example.libreriayorkshin.ui;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.libreriayorkshin.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Crear_usuario extends AppCompatActivity {
 
@@ -41,5 +53,44 @@ public class Crear_usuario extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void registrarUsuarioEnLaBase(View v){
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        EditText usuario = this.findViewById(R.id.usuarioregis);
+        String nombreusuario = usuario.getText().toString();
+
+        EditText contra = this.findViewById(R.id.contraregis);
+        String contrasena = contra.getText().toString();
+
+        EditText contra2 = this.findViewById(R.id.contraregis2);
+        String contrasena2 = contra2.getText().toString();
+
+        if (contrasena2.equals(contrasena)){
+            // Create a new user
+            Map<String, Object> user = new HashMap<>();
+            user.put("usuario", nombreusuario);
+            user.put("contrasena",contrasena );
+
+            // Add a new document with a generated ID
+            db.collection("usuarios")
+                    .add(user)
+                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.w(TAG, "Error al anadir el documento", e);
+                        }
+                    });
+        }else{
+            Toast.makeText(this,"Las contrasenas no son iguales",Toast.LENGTH_SHORT).show();
+        }
     }
 }

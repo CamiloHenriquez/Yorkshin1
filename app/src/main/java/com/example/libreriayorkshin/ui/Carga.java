@@ -1,6 +1,7 @@
 package com.example.libreriayorkshin.ui;
 
 import static android.app.Activity.RESULT_OK;
+import static android.content.ContentValues.TAG;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,22 +10,30 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.libreriayorkshin.R;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -97,6 +106,50 @@ public class Carga extends Fragment {
         //}
     //}
 
+
+    public void registrarDatos(View v) {
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        EditText manga = this.findViewById(R.id.nombremanga1);
+        String manga1 = manga.getText().toString();
+
+        EditText precio = this.findViewById(R.id.preciomanga1);
+        String precio1 = precio.getText().toString();
+
+        EditText dispo = this.findViewById(R.id.disponibilidad1);
+        String dispo1 = dispo.getText().toString();
+
+        EditText descripcion = this.findViewById(R.id.descripcion1);
+        String descripcion1 = descripcion.getText().toString();
+
+        EditText editorial = this.findViewById(R.id.editorial1);
+        String editorial1 = editorial.getText().toString();
+
+        // Create a new user
+        Map<String, Object> mangas = new HashMap<String,Map>();
+        mangas.put("manga", manga1);
+        mangas.put("precio",precio1 );
+        mangas.put("disponiblidad",dispo1 );
+        mangas.put("descripcion",descripcion1 );
+        mangas.put("editorial",editorial1 );
+
+        // Add a new document with a generated ID
+        db.collection("Mangas")
+                .add(mangas)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w(TAG, "Error al anadir el documento", e);
+                    }
+                });
+    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

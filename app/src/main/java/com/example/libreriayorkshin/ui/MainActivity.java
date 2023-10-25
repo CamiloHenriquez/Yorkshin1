@@ -17,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void login(View v) {
+
 
         EditText campo1 = this.findViewById(R.id.etnombreusuario);
         String nombreusuario = campo1.getText().toString();

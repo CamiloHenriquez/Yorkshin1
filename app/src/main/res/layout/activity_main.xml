@@ -80,6 +80,7 @@
             android:textColor="@color/icons"
             android:textColorHighlight="@color/accent"
             android:textColorLink="@color/accent"
+            android:theme="@style/tema_botones"
             tools:text="@string/cliente" />
 
         <RadioButton
@@ -89,7 +90,8 @@
             android:text="@string/tienda"
             android:textColor="@color/icons"
             android:textColorHighlight="@color/accent"
-            android:textColorLink="@color/accent" />
+            android:textColorLink="@color/accent"
+            android:theme="@style/tema_botones" />
     </RadioGroup>
 
     <Button

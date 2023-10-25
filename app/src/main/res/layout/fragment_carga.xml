@@ -45,7 +45,7 @@
             android:textColor="@color/icons" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/preciomanga1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -88,7 +88,7 @@
             android:textColor="@color/icons" />
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/disponibilidad1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -109,7 +109,7 @@
             android:textColor="@color/icons" />
 
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/descripcion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -131,7 +131,7 @@
             android:textColor="@color/icons" />
 
         <EditText
-            android:id="@+id/editTextText6"
+            android:id="@+id/editorial1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"

@@ -23,7 +23,7 @@
         android:textColor="@color/icons" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/usuarioregis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -46,7 +46,7 @@
         android:textColor="@color/icons" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/contraregis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -68,7 +68,7 @@
         android:textColor="@color/icons" />
 
     <EditText
-        android:id="@+id/editTextTextPassword4"
+        android:id="@+id/contraregis2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -87,5 +87,6 @@
         android:layout_marginRight="50dp"
         android:backgroundTint="@color/accent"
         android:gravity="center"
+        android:onClick="registrarUsuarioEnLaBase"
         android:text="@string/title_activity_crear_usuario" />
 </LinearLayout>
