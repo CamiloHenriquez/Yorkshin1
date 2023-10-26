@@ -1,15 +1,24 @@
 package com.example.libreriayorkshin.ui;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.libreriayorkshin.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +31,24 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View v) {
 
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+        DocumentReference docRef = db.collection("usuarios").document();
+        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document.exists()) {
+                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
+                    } else {
+                        Log.d(TAG, "No such document");
+                    }
+                } else {
+                    Log.d(TAG, "get failed with ", task.getException());
+                }
+            }
+        });
         EditText campo1 = this.findViewById(R.id.etnombreusuario);
         String nombreusuario = campo1.getText().toString();
         EditText campo2 = this.findViewById(R.id.etcontrasena);

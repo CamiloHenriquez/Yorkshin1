@@ -89,6 +89,8 @@ public class Crear_usuario extends AppCompatActivity {
                             Log.w(TAG, "Error al anadir el documento", e);
                         }
                     });
+            Toast.makeText(this, "Registrado con exito", Toast.LENGTH_SHORT).show();
+
         }else{
             Toast.makeText(this,"Las contrasenas no son iguales",Toast.LENGTH_SHORT).show();
         }
