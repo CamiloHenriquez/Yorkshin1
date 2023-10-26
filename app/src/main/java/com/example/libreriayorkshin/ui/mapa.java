@@ -1,5 +1,7 @@
 package com.example.libreriayorkshin.ui;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -62,5 +64,16 @@ public class mapa extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_mapa, container, false);
+    }
+
+    public void mapa(View v){
+
+        //Uri location = Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway,+Mountain+View,+California");
+        // Or map point based on latitude/longitude
+         Uri location = Uri.parse("geo:-27.364307, -70.334356"); // z param is zoom level
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+
+        startActivity(mapIntent);
+
     }
 }

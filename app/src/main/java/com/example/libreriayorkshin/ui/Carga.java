@@ -111,28 +111,28 @@ public class Carga extends Fragment {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        EditText manga = this.findViewById(R.id.nombremanga1);
-        String manga1 = manga.getText().toString();
+        //EditText manga = this.findViewById(R.id.nombremanga1);
+        //String manga1 = manga.getText().toString();
 
-        EditText precio = this.findViewById(R.id.preciomanga1);
-        String precio1 = precio.getText().toString();
+        //EditText precio = this.findViewById(R.id.preciomanga1);
+        //String precio1 = precio.getText().toString();
 
-        EditText dispo = this.findViewById(R.id.disponibilidad1);
-        String dispo1 = dispo.getText().toString();
+        //EditText dispo = this.findViewById(R.id.disponibilidad1);
+        //String dispo1 = dispo.getText().toString();
 
-        EditText descripcion = this.findViewById(R.id.descripcion1);
-        String descripcion1 = descripcion.getText().toString();
+        //EditText descripcion = this.findViewById(R.id.descripcion1);
+        //String descripcion1 = descripcion.getText().toString();
 
-        EditText editorial = this.findViewById(R.id.editorial1);
-        String editorial1 = editorial.getText().toString();
+        //EditText editorial = this.findViewById(R.id.editorial1);
+        //String editorial1 = editorial.getText().toString();
 
         // Create a new user
-        Map<String, Object> mangas = new HashMap<String,Map>();
-        mangas.put("manga", manga1);
-        mangas.put("precio",precio1 );
-        mangas.put("disponiblidad",dispo1 );
-        mangas.put("descripcion",descripcion1 );
-        mangas.put("editorial",editorial1 );
+        Map<String, Object> mangas = new HashMap<>();
+        //mangas.put("manga", manga1);
+        //mangas.put("precio",precio1 );
+        //mangas.put("disponiblidad",dispo1 );
+        //mangas.put("descripcion",descripcion1 );
+        //mangas.put("editorial",editorial1 );
 
         // Add a new document with a generated ID
         db.collection("Mangas")
