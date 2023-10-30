@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "8905276047",
-    "project_id": "yorkshin-201cc",
-    "storage_bucket": "yorkshin-201cc.appspot.com"
+    "project_number": "469002566560",
+    "project_id": "yorkshin2",
+    "storage_bucket": "yorkshin2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:8905276047:android:0fd5b3c9cc539561b74efa",
+        "mobilesdk_app_id": "1:469002566560:android:c6ad07cd9dab07b54802c5",
         "android_client_info": {
           "package_name": "com.example.libreriayorkshin"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBDH1uKEfd7ZI4JOcR2d3zbrUUHQrPbnEs"
+          "current_key": "AIzaSyCuLsKM6cteS0VrHK5V0oSqY_wh8pRQAn4"
         }
       ],
       "services": {
